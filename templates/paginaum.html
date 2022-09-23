@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+
+    <form action="{{url_for('paginaum')}}" method="POST">
+
+
+<body>
+
+
+
+
+    <img class="acecartao" src="{{url_for('static', filename='capa/cart.jpg')}}" alt="Acaitamos cartoes">
+
+
+    <div class="slider">
+
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+
+            <div class="slide first">
+                <p>
+                    <img class="slider1" src="{{url_for('static', filename='capa/logo.jpg')}}">
+                </p>
+            </div>
+            <div class="slide">
+                <p>
+                    <img class="slider2" src="{{url_for('static', filename='capa/imgbeatrix.jpg')}}">
+                    <p>
+                </p>
+            </div>
+            <div class="navigation-bar">
+                <label class="manual-btn" for="radio1"></label>
+                <label class="manual-btn" for="radio2"></label>
+            </div>
+        </div>
+    </div>
+
+
+    <font color="MediumVioletRed">
+        <h1 style="font-family:georgia" align="center" >Qualidade e Conforto Você Só Encontra Aqui!!!</h1>
+    </font>
+
+    <style>
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+    <body>
+        <ul>
+            <li>
+                 <img class="imgb1" src="{{url_for('static', filename='capa/imgmodelo1.jpeg')}}">
+            </li>
+            <li>
+                 <img class="imgb1" src="{{url_for('static', filename='capa/imgmod2.jpg')}}">
+            </li>
+            <li>
+                 <img class="imgb1" src="{{url_for('static', filename='capa/imgmod3.jpeg')}}">
+            </li>
+
+        </ul>
+
+
+        <ul>
+            <li>
+                 <img class="imgbm" src="{{url_for('static', filename='capa/imgmodelo1.jpeg')}}">
+            </li>
+            <li>
+                 <img class="imgbm" src="{{url_for('static', filename='capa/imgmod2.jpg')}}">
+            </li>
+        </ul>
+
+
+    </body>
+
+    <body>
+         <ul>
+             <li>
+                <img class="imgb2" src="{{url_for('static', filename='capa/imgmod4.jpeg')}}">
+             </li>
+             <li>
+                <img class="imgb2" src="{{url_for('static', filename='capa/imgmod5.jpeg')}}">
+             </li>
+             <li>
+                <img class="imgb2" src="{{url_for('static', filename='capa/imgmod6.jpeg')}}">
+             </li>
+         </ul>
+
+         <ul>
+             <li>
+                <img class="imgb3" src="{{url_for('static', filename='capa/imgmod4.jpeg')}}">
+             </li>
+             <li>
+                <img class="imgb3" src="{{url_for('static', filename='capa/imgmod5.jpeg')}}">
+             </li>
+             <li>
+                <img class="imgb3" src="{{url_for('static', filename='capa/imgmod6.jpeg')}}">
+             </li>
+             <li>
+                <img class="imgb3" src="{{url_for('static', filename='capa/imgmod6.jpeg')}}">
+             </li>
+         </ul>
+
+    </body>
+    <font color="MediumVioletRed">
+        <h1 style="font-family:georgia" align="center" >Todo dia é um Bom dia Para Comprar Roupa Nova, Confira as Novidades no
+            Nosso Instagram Peça Logo a Sua no Nosso Whatsapp.</h1>
+    </font>
+
+
+
+
+    <div class="whats">
+        <a href="https://wa.me/5579996322530" target="_blank">
+            <img src="{{url_for('static', filename='capa/whatsapp.jpg')}}" width="65" alt="Fale com nosco pelo whatsapp"
+                 title="Fale com nosco pelo whatsapp">
+        </a>
+    </div>
+
+    <div class="instagram">
+        <a href="https://instagram.com/beatrix.modas?igshid=YmMyMTA2M2Y=" target="_blank">
+            <img src="{{url_for('static', filename='capa/insta.jpg')}}" width="65" alt="Siga nosso instagram"
+                 title="Siga nosso instagram">
+        </a>
+    </div>
+
+</body>
+
+    </form>
+
+    <img class="fim" src="{{url_for('static', filename='capa/fimpg.png')}}">
+
+{% endblock conteudo %}

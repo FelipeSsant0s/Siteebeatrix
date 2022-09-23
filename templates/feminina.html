@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+    <h2 style="text-align: center;">Moda Feminina</h2>
+    <hr>
+
+    <form action="{{url_for('feminina')}}" method="POST">
+
+<body>
+
+    <font color="MediumVioletRed">
+        <h1 style="font-family:georgia" align="center" >Looks Exclusivos Para Mulheres Exigentes e Que Não Merecem Menos</h1>
+    </font>
+    <hr>
+
+    <style>
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around
+        }
+
+    </style>
+
+    <body>
+        <ul>
+            <li>
+                <img class="imgfem0" src="{{url_for('static',filename='femin/fem01.jpg')}}">
+                 <p style = "font-family:courier,arial,helvetica;">
+                    CONJUNTO<br>R$69,99<br>5x R$13,99 s/juros
+                </p>
+            </li>
+            <li>
+                <img class="imgfem0" src="{{url_for('static',filename='femin/fem02.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    MACAQUITO<br>R$69,99<br>5x R$13,99 s/juros
+                </p>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <img class="imgfem1" src="{{url_for('static',filename='femin/fem1.jpg')}}">
+                 <p style = "font-family:courier,arial,helvetica;">
+                    CONJUNTO<br>R$69,99<br>5x R$13,99 s/juros
+                </p>
+            </li>
+            <li>
+                <img class="imgfem1" src="{{url_for('static',filename='femin/fem2.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    MACAQUITO<br>R$69,99<br>5x R$13,99 s/juros
+                </p>
+            </li>
+            <li>
+                <img class="imgfem1" src="{{url_for('static',filename='femin/fem3.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    Escreva seu texto aqui
+                </p>
+            </li>
+            <li>
+                <img class="imgfem1" src="{{url_for('static',filename='femin/fem4.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    Escreva seu texto aqui
+                </p>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <img class="imgfem2" src="{{url_for('static',filename='femin/fem5.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    MACAQUITO<br>R$69,99<br>5x R$13,99 s/juros
+                </p>
+            </li>
+            <li>
+                <img class="imgfem2" src="{{url_for('static',filename='femin/fem6.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    Escreva seu texto aqui
+                </p>
+            </li>
+            <li>
+                <img class="imgfem2" src="{{url_for('static',filename='femin/fem7.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    Escreva seu texto aqui
+                </p>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <img class="imgfem2" src="{{url_for('static',filename='femin/fem5.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    MACAQUITO<br>R$69,99<br>5x R$13,99 s/juros
+                </p>
+            </li>
+            <li>
+                <img class="imgfem2" src="{{url_for('static',filename='femin/fem6.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    Escreva seu texto aqui
+                </p>
+            </li>
+            <li>
+                <img class="imgfem2" src="{{url_for('static',filename='femin/fem7.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    Escreva seu texto aqui
+                </p>
+            </li>
+
+        </ul>
+
+        <ul>
+            <li>
+                <img class="imgfem3" src="{{url_for('static',filename='femin/fem5.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    MACAQUITO<br>R$69,99<br>5x R$13,99 s/juros
+                </p>
+            </li>
+            <li>
+                <img class="imgfem3" src="{{url_for('static',filename='femin/fem6.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    Escreva seu texto aqui
+                </p>
+            </li>
+            <li>
+                <img class="imgfem3" src="{{url_for('static',filename='femin/fem7.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    Escreva seu texto aqui
+                </p>
+            </li>
+            <li>
+                <img class="imgfem3" src="{{url_for('static',filename='femin/fem7.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    Escreva seu texto aqui
+                </p>
+            </li>
+            <li>
+                <img class="imgfem3" src="{{url_for('static',filename='femin/fem7.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    Escreva seu texto aqui
+                </p>
+            </li>
+        </ul>
+
+
+
+    </body>
+
+
+    <div class="whats">
+        <a href="https://wa.me/5579996322530" target="_blank">
+            <img src="{{url_for('static', filename='capa/whatsapp.jpg')}}" width="65" alt="Fale com nosco pelo whatsapp"
+                 title="Fale com nosco pelo whatsapp">
+        </a>
+    </div>
+
+    <div class="instagram">
+        <a href="https://instagram.com/beatrix.modas?igshid=YmMyMTA2M2Y=" target="_blank">
+            <img src="{{url_for('static', filename='capa/insta.jpg')}}" width="65" alt="Siga nosso instagram"
+                 title="Siga nosso instagram">
+        </a>
+    </div>
+
+
+
+</body>
+    </form>
+{% endblock conteudo %}

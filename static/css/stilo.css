@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.slider{
+    width: 1350px;
+    height: 580px;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+.slides{
+    display: flex;
+    width: 200%;
+    height: 100%;
+
+}
+
+.slide {
+    width: 50%;
+    transition: 0.5s;
+
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+
+
+}
+
+#radio2:checked ~ .first {
+    margin-left: -50%;
+
+
+}
+
+.navigation-bar{
+    position: absolute;
+    bottom: -180px;
+
+    left: 50%;
+    transform: translate(-50%);
+}
+
+input {
+    display: none;
+    position: fixed;
+}
+
+.manual-btn{
+    border: 2px solid;
+
+    padding: 7px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.manual-btn:hover{
+    background: #ffff00;
+    transition: 0.4s;
+}
+
+.img1inicio{
+    position: relative;
+    width: 1350px;
+    height: 550px;
+}
+
+@keyframes animacao{
+    100% {
+        transform: translate(calc(100vw - 5px));
+    }
+}
+
+
+.acecartao{
+    position: relative;
+        left: 2px;
+    width: 1350px;
+    height: 200px;
+    animation-name: animacao;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
+
+
+
+.whats{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    border-radius: 60%;
+}
+
+.instagram{
+    position: fixed;
+    bottom: 110px;
+    right: 30px;
+    z-index: 9999;
+}
+
+.imgb1{
+    width: 400px;
+    height: 600px;
+
+}
+
+.imgbm{
+    width: 600px;
+    height: 800px;
+
+}
+
+.imgb2{
+    width: 400px;
+    height: 600px;
+
+}
+
+.imgb3{
+    width: 310px;
+    height: 420px;
+}
