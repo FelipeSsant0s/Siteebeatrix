@@ -5,7 +5,64 @@
 
     <form action="{{url_for('juvenil')}}" method="POST">
 <body>
-    <p>Aqui vai ser postado modelos juvenil</p>
+
+
+    <font color="MediumVioletRed">
+        <h1 style="font-family:georgia" align="center" >Looks Exclusivos Para Jovens</h1>
+    </font>
+    <hr>
+
+    <style>
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around
+        }
+    </style>
+
+    <body>
+        <ul>
+            <li>
+                <img class="juv1" src="{{url_for('static', filename='juvenil/juv.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    CONJUNTO<br>R$69,99<br>5x R$13,99 s/juros
+                </p>
+            </li>
+            <li>
+                <img class="juv1" src="{{url_for('static', filename='juvenil/juv.jpg')}}">
+                <p style = "font-family:courier,arial,helvetica;">
+                    CONJUNTO<br>R$69,99<br>5x R$13,99 s/juros
+                </p>
+            </li>
+
+        </ul>
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+    <div class="whats">
+        <a href="https://wa.me/5579996322530" target="_blank">
+            <img src="{{url_for('static', filename='capa/whatsapp.jpg')}}" width="65" alt="Fale com nosco pelo whatsapp"
+                 title="Fale com nosco pelo whatsapp">
+        </a>
+    </div>
+
+    <div class="instagram">
+        <a href="https://instagram.com/beatrix.modas?igshid=YmMyMTA2M2Y=" target="_blank">
+            <img src="{{url_for('static', filename='capa/insta.jpg')}}" width="65" alt="Siga nosso instagram"
+                 title="Siga nosso instagram">
+        </a>
+    </div>
+
 </body>
     </form>
 

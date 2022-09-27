@@ -18,6 +18,9 @@ def juvenil():
     return render_template('juvenil.html')
 
 
+@app.route('/infantil', methods=['GET', 'POST'])
+def infantil():
+    return render_template('infantil.html')
 
 
 if __name__ == '__main__':
